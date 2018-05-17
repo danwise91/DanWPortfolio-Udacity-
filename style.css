@@ -1,0 +1,246 @@
+body {
+	background-image: url("img/milkyway.jpg");
+}
+
+/*styling for header*/
+#header{
+    font-stretch: semi-condensed;
+	font-size: large;
+}
+
+#header .header_top{
+	position: absolute;
+	font-style: oblique;
+	height: 200px;
+	left: 50px;
+	top: 50px;
+  	color: #00ff00;
+}
+
+#header .header_bottom{
+	position: absolute;
+	font-style: oblique;
+	left: 50px;
+	top: 100px;
+  	color: #00ff00;
+  	padding-top: -20px;
+  	border-bottom: 5px solid green;
+}
+
+#header .logo{
+	position: absolute;
+	top: 50px;
+	left: 300px;
+	border-style: solid;
+	background: white;
+	height: 100px;
+}
+/*styling for header*/
+
+
+/*styling for about section*/
+#about{
+	position: absolute;
+	left: 20px;
+	top: 200px;
+}
+
+.about-container{
+	justify-content: center;
+	left: 50px;
+	top: 980px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 30%;
+  	background-color: lightblue;
+}
+
+.about-container img{
+	width: 200px;
+	height: 200px;
+	order: 2;
+}
+.about-container .about_title{
+	width: 200px;
+	height: 100px;
+	order: -1;
+	font-style: oblique;
+  	text-decoration: underline;
+}
+
+.about-container > div {
+	background-color: rgba(255, 255, 255, 0.8);
+  	text-align: center;
+  	font-size: 20px;
+  	margin: 35px;
+}
+
+.profile_pic:hover{
+	border-style: solid;
+	border-color: green;
+}
+
+/*.about-container*/
+
+
+/*styling for featured work*/
+#featured_work{
+	position: absolute;
+	left: 50px;
+	top: 800px;
+}
+
+.grid-container{
+	justify-content: center;
+	left: 50px;
+	top: 980px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+  	background-color: orange;
+  	padding: 20px;
+}
+
+.grid-container > div {
+	background-color: rgba(255, 255, 255, 0.8);
+  	text-align: center;
+  	padding: 20px 0;
+  	font-size: 30px;
+  	margin: 35px;
+}
+
+.grid-container > .zero{
+	font-style: oblique;
+  	font-size: 200%;
+  	text-decoration: underline;
+}
+
+.grid-container .img{
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+}
+
+/*styling for featured work*/
+
+/*break points*/
+@media only screen and (min-width: 993px){
+	.zero{
+		width: 100%;
+		order: -1;
+	}
+    .first{
+    	width: 70%;
+    	order:2;
+    }
+    .second{
+    	width: 70%;
+    	order:4;
+    }
+    .third{
+    	width: 70%;
+    	order:3;
+    }
+    .grid-container{
+    	width: 80%;
+    }
+    .profile_pic{
+    	left: 20px;
+    }
+
+    #featured_work{
+    	top: 1200px;
+    }
+}
+
+@media only screen and (min-width: 360px){
+	.zero{
+		width: 50%;
+		order: -1;
+	}
+    .first{
+    	width: 70%;
+    	order:1;
+    }
+    .second{
+    	width: 70%;
+    	order:2;
+    }
+    .third{
+    	width: 70%;
+    	order:3;
+    }
+    .grid-container{
+    	width: 77%;
+    }
+    #about{
+	position: absolute;
+	left: 0px;
+	top: 200px;
+	width: 98%;
+	}
+
+    #featured_work{
+    	top: 1100px;
+    	left: 0px;
+    }
+ 	.about-container img{
+	width: 320px;
+	height: 350px;
+	order: 2;
+	}
+	.grid-container .img{
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 300px;
+	height: 200px;
+	}
+	.grid-container > div {
+	width: 300px;
+	}
+	#header .logo{
+	width: 80px;
+	height: 50px;
+	left: 250px;
+	}
+
+}
+@media only screen and (min-width: 768px){
+	.zero{
+		width: 50%;
+		order: -1;
+	}
+    .first{
+    	width: 70%;
+    	order:1;
+    }
+    .second{
+    	width: 70%;
+    	order:2;
+    }
+    .third{
+    	width: 70%;
+    	order:3;
+    }
+    .grid-container{
+    	width: 80%;
+    }
+
+    #featured_work{
+    	top: 1100px;
+    }
+
+    .about-container{
+    	width: 75%;
+    }
+
+}
+
+/*break points*/
